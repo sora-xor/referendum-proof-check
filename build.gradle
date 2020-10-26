@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation("com.github.soramitsu:sora-sdk:0.3.15")
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
+}
