@@ -1,7 +1,7 @@
 # Referendum votes verifier
 
 ## Goal
-This guide is aimed to explain how to verify honesty of first Sora's referendum proof.
+This guide is aimed to explain how to verify honesty of first SORA's referendum proof.
 
 ## Environment requirements
 You need to have installed Java at least version 8. If you don't have it, install it in the most
@@ -23,14 +23,14 @@ a Merkle path in standard output.
 
 ## More verbose explanation
 ### User's DID (Digital IDentity)
-Every user in Sora has DID and keypair associated with this DID. DID is created by Sora's mobile application
+Every user in SORA has DID and keypair associated with this DID. DID is created by SORA's mobile application
 and persisted in Iroha. Before public key is committed in Iroha signature of request is checked. This 
 allows proving subject who performs committing really own this private key and intention to commit was 
 not changed after creation. Committing public key allows to bind it with user's DID and later any person can 
 retrieve public key of user by his DID. 
 
 ### DAuth
-Every outgoing request from Sora's mobile application to SoraNET's services signed by this keypair. 
+Every outgoing request from SORA's mobile application to SORA NET's services signed by this keypair. 
 We call it **DAuth**. All significant data from the request is concated into one string (Request method name +
 Full url + Request body + Epoch milliseconds from header + User's DID from header + id of User's 
 public key from header) and signed with private key. This allow to identify and check integrity of request. 
@@ -100,10 +100,10 @@ root of Merkle trie. It proves our voting was count.
 You should make the list of steps in order to get your wallet account id in the mobile application:
 1. Open the Wallet tab
 2. Click on your VAL account
-3. In the bottom select "Copy Sora wallet address"
+3. In the bottom select "Copy SORA wallet address"
 4. Paste the result somewhere. It should look like did_sora_xxxxxxxxxxxxxxxxx@sora
-### What is SoraNET?
-SoraNET is built on Iroha blockchain. It consists of Iroha itself and some services that provide API for Iroha.
+### What is SORA NET?
+SORA NET is built on Iroha blockchain. It consists of Iroha itself and some services that provide API for Iroha.
 ### What is DID(Digital IDentity)
 DIDs are URLs that relate a DID subject to means for trustable
 interactions with that subject. DIDs resolve to DID Documents — simple documents that describe how 
