@@ -15,7 +15,7 @@ You need to have installed Java at least version 8. If you don't have it, instal
         proofChecker.checkProofsByWalletAccountId("<your wallet account id here>");
 
     Put your wallet account id in Iroha as method's param. If you don't know it then see section 
-    ["How to get my wallet account id"](#how-to-get-my-wallet-account-id?)
+    ["How to get my wallet account id"](#how-to-get-my-wallet-account-id)
 3. Run method `main`
 
 If the user with specified wallet account id had voted for referendum, then you will see 
