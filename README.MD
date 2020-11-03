@@ -1,5 +1,8 @@
 # Referendum Vote Verifier
 
+## Community test ⚠️
+This instruction contains proofs and Merkle root for Community test environment of Sora project. For Sora's production environment you can find instruction and code [here](https://github.com/sora-xor/referendum-proof-check).
+
 ## Goal
 This guide explains how to verify the fairness of the first SORA referendum proof.
 

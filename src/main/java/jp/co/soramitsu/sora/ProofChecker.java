@@ -32,7 +32,7 @@ public class ProofChecker {
   public static final Path PROOFS_PATH = Paths.get("proofs/proofs.json");
   public static final Path ZIPPED_PROOFS_PATH = Paths.get("proofs/proofs.zip");
 
-  public static final String EXPECTED_REFERENDUM_MERKLE_ROOT = "1024aac8dc7fd2270c544fb9768bbddfe3091cee58d187fff53e1961b1169479";
+  public static final String EXPECTED_REFERENDUM_MERKLE_ROOT = "7db3dfb4b137fc1313e1dc1227d7c14f9111f368b23705e52da0609ab4699df9";
 
   public static final ObjectMapper MAPPER = new ObjectMapper()
       .enable(SerializationFeature.INDENT_OUTPUT)
